@@ -1,0 +1,19 @@
+{
+  "name": "ndb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4S1ght/ndb.git"
+  },
+  "author": "4Sight",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/4S1ght/ndb/issues"
+  },
+  "homepage": "https://github.com/4S1ght/ndb#readme"
+}

@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "build/index.js",
+  "type": "module",
   "scripts": {
+    "tsc": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/4S1ght/ndb/issues"
   },
-  "homepage": "https://github.com/4S1ght/ndb#readme"
+  "homepage": "https://github.com/4S1ght/ndb#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
 }

@@ -26,9 +26,9 @@ export default class Buffers extends Buffer {
         return mem
     }
     
-    /** Returns a UTF-8 enoded string buffer. */
-    public static string(bytes: number, string: string) {
-        const buffer = this.alloc(bytes)
+    /** Returns a UTF-8 enoded string buffer. Expect single-byte characters only. */
+    public static string(string: string) {
+        const buffer = this.alloc(string.length)
         buffer.write(string, 'utf-8')
         return buffer
     }
@@ -42,7 +42,7 @@ export default class Buffers extends Buffer {
 
     /** Ensures a buffer has proper length and adds empty padding at the end. */
     public static toLength(buffer: Buffer, length: number) {
-        const l = length - buffer.length;
+        const l = length - buffer.byteLength;
         if (l < 0) return buffer;
         return this.concat([buffer, this.alloc(l)])
     }
